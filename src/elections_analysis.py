@@ -115,7 +115,7 @@ if (not os.path.isdir(out_dir)):
 # 1) Map with the average expenses of federal deputies, by state (2018)
 br_shape_url = 'https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/brazil-states.geojson'
 with urllib.request.urlopen(br_shape_url) as response:
-    # Polygons corresponding to the states of Brazil
+    # Polygons corresponding to the states of Brazil:
     Brazil = json.load(response)
 
 state_id_map = {}
